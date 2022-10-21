@@ -2,11 +2,11 @@
 int[] A = GetArray("Введите три координаты точки А: ");
 int[] B = GetArray("Введите три координаты точки B: ");
 
-int sumTotal = (x2-x1)*(x2-x1)+(y2-y1)*(y2-y1);
+int sumTotal = (B[0]-A[0])*(B[0]-A[0])+(B[1]-A[1])*(B[1]-A[1])+(B[2]-A[2])*(B[2]-A[2]);
 Console.WriteLine($"sumTotal: {sumTotal}");
 
 double result = Math.Sqrt(sumTotal);
-Console.WriteLine($"Растояние между точнами А({x1},{y1}) и B({x2},{y2}): {result}");
+Console.WriteLine($"Растояние между точнами А({A[0]},{A[1]},{A[2]}) и B({B[0]},{B[1]},{B[2]}): {result}");
 
 int[] GetArray (string message)
 {
